@@ -54,7 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn1"
         app:layout_constraintVertical_bias="0.09"
-        tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,NotSibling,TextSizeCheck,TextContrastCheck" />
+        tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,NotSibling,TextContrastCheck,TextSizeCheck,UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/textView7"
@@ -68,7 +68,8 @@
         android:textSize="100sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -76,7 +77,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/logoo"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="513dp" />
+        tools:layout_editor_absoluteY="513dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
