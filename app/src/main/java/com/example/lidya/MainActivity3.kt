@@ -13,6 +13,7 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var btn5 : Button
     private lateinit var btn6 : Button
     private lateinit var fab2 : FloatingActionButton
+    private lateinit var btn14 : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,12 +37,17 @@ class MainActivity3 : AppCompatActivity() {
             val intent = (Intent(this, MainActivity2::class.java))
             startActivity(intent)
         }
+
+        btn14.setOnClickListener {
+            val intent = (Intent(this, MainActivity7::class.java))
+            startActivity(intent)
+        }
     }
     private fun inialztion()
     {
         btn5 = findViewById(R.id.btn5)
         btn6 = findViewById(R.id.btn6)
         fab2 = findViewById(R.id.fab2)
-
+        btn14= findViewById(R.id.btn14)
     }
 }

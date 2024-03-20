@@ -9,6 +9,7 @@ class MainActivity6 : AppCompatActivity() {
 
     private lateinit var  btn10 : Button
     private lateinit var  btn11 : Button
+    private lateinit var  btn15 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main6)
@@ -25,12 +26,19 @@ class MainActivity6 : AppCompatActivity() {
             val intent = (Intent(this, MainActivity6::class.java))
             startActivity(intent)
         }
+
+        btn15.setOnClickListener {
+            val intent2 = (Intent(this, MainActivity9::class.java))
+            startActivity(intent2)
+        }
+
     }
 
     private fun inialztion()
     {
         btn10 = findViewById(R.id.btn10)
         btn11 = findViewById(R.id.btn11)
+        btn15 = findViewById(R.id.btn15)
 
     }
 }

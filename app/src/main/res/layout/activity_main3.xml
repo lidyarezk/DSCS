@@ -41,23 +41,6 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/forgetpassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="282dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="87dp"
-                android:text="Forgot Password?"
-                android:textColor="#64A1BD"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/btn5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-                tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
-
             <EditText
                 android:id="@+id/editTextTextPassword"
                 android:layout_width="wrap_content"
@@ -137,6 +120,24 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn5"
                 tools:ignore="HardcodedText,InefficientWeight,MissingConstraints,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="224dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="72dp"
+                android:text="Forgot Password?"
+                android:textColor="#64A1BD"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/btn5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
